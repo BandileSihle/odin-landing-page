@@ -7,15 +7,24 @@
 }
 
 img {
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 400px;
     height: 230px;
     margin-top: 200px;
     border-radius: 24px;
+    overflow: hidden;
+    object-position: fixed;
 }
 
 .Upper {
-    flex-shrink: 0;
-    background-color: #1f2937
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #1f2937;
+    border-radius: 24px;
     
 }
 .logo,.header,.top-text {
@@ -24,7 +33,7 @@ img {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -176,9 +185,11 @@ a {
 
 .image {
     display: flex;
-    gap: 200px;
-    flex-shrink: 0;
+    gap: 100px;
     flex-basis: 0;
+    margin-left: auto;
+    min-height: 0px;
+    min-width: 0px;;
 
 }
 
@@ -244,6 +255,7 @@ a {
 }
 
 .call-to-action {
+    flex-grow: 1;
     display: flex;
     flex-shrink: 0;
     flex-direction: column;
@@ -258,6 +270,7 @@ a {
 
 .bottom-sign-up {
     flex-shrink: 0;
+    overflow: hidden;
     font-size: 18px;
     margin-right: 100px;
     margin-bottom: 25px;
